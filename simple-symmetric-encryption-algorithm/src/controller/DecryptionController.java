@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
-import util.DEP7Crypto;
+import lk.ijse.crypto.DEP7Crypto;
 
 public class DecryptionController {
     public TextField txtText;

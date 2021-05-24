@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
-import util.DEP7Crypto;
+import lk.ijse.crypto.DEP7Crypto;
 
 import java.util.Arrays;
 
@@ -20,13 +20,13 @@ public class EncryptionController {
 //        "abc     ".trim() = "abc"
 //        "     abc".trim() = "abc"
 
-        if (text.trim().isEmpty()){
+        if (text.trim().isEmpty()) {
             new Alert(Alert.AlertType.ERROR, "Please enter valid text", ButtonType.OK).show();
             txtText.requestFocus();
             return;
         }
 
-        if (key.trim().isEmpty()){
+        if (key.trim().isEmpty()) {
             new Alert(Alert.AlertType.ERROR, "Please enter valid key", ButtonType.OK).show();
             txtKey.requestFocus();
             return;

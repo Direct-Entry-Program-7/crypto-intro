@@ -1,4 +1,6 @@
-package util;
+package lk.ijse.crypto;
+
+import java.util.Base64;
 
 public class DEP7Crypto {
 
@@ -33,6 +35,9 @@ public class DEP7Crypto {
         for (int i = reversedText.length() - 1; i >= 0; i--) {
             originalText += reversedText.charAt(i);
         }
+
+        if (originalText.substring(originalText.length() - key.length()))
+
         return originalText.substring(0,originalText.length() - key.length());
     }
 
