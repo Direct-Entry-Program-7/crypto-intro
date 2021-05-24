@@ -17,7 +17,7 @@ public class AppInitializer extends Application {
         Parent root = FXMLLoader.load(this.getClass().getResource("/view/MainForm.fxml"));
         Scene mainScene = new Scene(root);
         primaryStage.setScene(mainScene);
-        primaryStage.setTitle("Cryptography Demo");
+        primaryStage.setTitle("Simple Symmetric Encryption Algorithm");
         primaryStage.centerOnScreen();
         primaryStage.setResizable(false);
         primaryStage.show();
