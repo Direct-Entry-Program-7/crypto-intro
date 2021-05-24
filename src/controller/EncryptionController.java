@@ -4,6 +4,7 @@ import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
+import util.DEP7Crypto;
 
 import java.util.Arrays;
 
@@ -31,21 +32,7 @@ public class EncryptionController {
             return;
         }
 
-        text += key;
-        String reversedText = "";
-        for (int i = text.length() - 1; i >= 0; i--) {
-            reversedText += text.charAt(i);
-        }
-
-        String cipherText = "";
-        for (int i = 0; i < reversedText.length(); i++) {
-            int code = reversedText.charAt(i);
-            code += 10;
-            char newChar = (char) code;
-            cipherText += newChar;
-        }
-
-        txtCipherText.setText(cipherText);
+        txtCipherText.setText(DEP7Crypto.encrypt(text, key));
 
     }
 }
