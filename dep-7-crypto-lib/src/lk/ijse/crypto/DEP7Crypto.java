@@ -15,7 +15,7 @@ public class DEP7Crypto {
         /* Now let's reverse the whole thing
          * Eg:
          *  scrambledText = "ijse123"
-         *  reversedText = "123ijse" */
+         *  reversedText = "321esji" */
         String reversedText = reverseString(scrambledText);
 
         /*
